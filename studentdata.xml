@@ -1,0 +1,10 @@
+<student add() modify() Search() >
+    <name>John Doe</name>
+    <age>20</age>
+    <major>Computer Science</major>
+</student>
+<student>
+    <name>Jane Smith</name>
+    <age>22</age>
+    <major>Mathematics</major>
+</student>
