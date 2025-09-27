@@ -1,0 +1,10 @@
+import requests
+
+token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1ODkyNjE0OCwianRpIjoiYzY1ZjNjYTUtZDZjNy00NmZhLTllYTgtZmViZWMxNjY5ZGRmIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluIiwibmJmIjoxNzU4OTI2MTQ4LCJjc3JmIjoiODQ2NTU0NzgtNWMxZC00NGY1LTljNDQtZWU3MmFkMjczNWVjIiwiZXhwIjoxNzU5NDY2MTQ4LCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIn0.QfEF_CEc0kOzN218w2OaORTYMIRtEyAA5dEP77V7K00"
+
+headers = {
+    "Authorization": f"Bearer {token}"
+}
+
+response = requests.get("http://localhost:5001/protected", headers=headers)
+print(response.json())
